@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume | Jazzy's Portfolio</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/fixed_sidebar.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="sou1a01af86.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="index.html"><img src="images/logo.png" alt="logo" id="#home"/>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        	<li>
+				<div class="dropdown">
+					<button class="dropbtn">
+					<a href="portfolio.html">PORTFOLIO</a></button>
+						<div class="dropdown-content">
+							<a href="portfolio.html">Portfolio</a>
+							<a href="gallery.html">Gallery</a>
+							<a href="video.html">Video</a>
+							<a href="standalone.html">Case Study</a>
+						</div>
+				</div>	
+			</li>
+		  <li><a href="fixed_about.html">ABOUT</a></li>
+        <li> <a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+	<div id="content"><!--main container for body of this page -->
+		<h1>Resume</h1><!-- title of this page -->
+		<section class="mainContent"> <!-- content of this page -->
+			<div class="PDFsize">
+				<embed type="application/PDF" src="files/Basic_Resume.docx.pdf" background-color="#FFFFFF" javascript="allow" id="PDFsize"/>
+			</div><!-- close of PDFsize div -->
+	<a href="files/Basic_Resume.docx.pdf" download="PDF" target="_blank">
+        <button type="button" id="PDFbutton">Download Resume</button>
+    </a>
+	<!-- back to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		</section><!-- close of mainContent -->
+		<section class="sidebar"> 
+<!-- This adds a sidebar with searchbox, menusets, & links -->
+	<input type="text"  id="search" value="search">
+    	<div id="menubar">
+        	<nav class="menu">
+          	<h2><!-- Title for menuset 1 -->MENU ITEM 1 </h2>
+          	<hr>
+          		<ul> <!-- List of links under menuset 1 -->
+            	<li><a href="#" title="Link">Link 1</a></li>
+            	<li><a href="#" title="Link">Link 2</a></li>
+            	<li><a href="#" title="Link">Link 3</a></li>
+          		</ul>
+			</nav>
+      </div>
+</section><!-- close of sidebar -->
+
+	</div><!-- close of content -->
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024- <strong>Jazzy Quick Kennedy</strong></div>
+</div>
+<!-- Main Container Ends -->
+		<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
